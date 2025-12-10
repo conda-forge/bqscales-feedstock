@@ -19,7 +19,10 @@ requirements:
     - python >=3.6
     - pip
     - jupyter-packaging
+    - hatch
     - hatchling
+    - hatch-nodejs-version
+    - hatch-build-scripts
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
     - yarn =3
