@@ -1,13 +1,13 @@
 {% set name = "bqscales" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a59cdc387563b345e77020dde40b297de6a56a918f7640638c4b7132a2a9342
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 061488c68efba046ba166bbb9f87c8908c93b0bbe1a4636c36ca680553a121c1
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - pip
     - jupyter-packaging
     - hatchling
+    - hatch-nodejs-version
+    - hatch-build-scripts
     - hatch-jupyter-builder
     - jupyterlab >=4,<5
     - yarn =3
