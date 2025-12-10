@@ -1,5 +1,5 @@
 {% set name = "bqscales" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 480c05f186f7d7598ebb5e694af318553fd5e3df0f1704e9cb6193d15b0c2166
+  sha256: 3d95239d1b84719d27856b8f9c81ef547bab3a2861d5b1d942e35f4a33234173
 
 build:
   noarch: python
